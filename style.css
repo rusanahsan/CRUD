@@ -3,11 +3,6 @@
     padding:0px 0px;
     font-family: sans-serif;
 }
-@media (max-width: 481px) , (max-height: 700px) {
-    html{
-        font-size:8px;
-    }
-}
 body{
     display:flex;
     justify-content:center;
