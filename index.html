@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<table class="content-table" id="db">
+<thead>
+    <tr>
+        <th>Student Id</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Address</th>
+        <th>Timestamp</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody id="tabbod">
+    <tr>
+        <td>1</td>
+        <td>Rusan Ahsan</td>
+        <td>21/07/1996</td>
+        <td>Baruipur</td>
+        <td>18:00:03</td>
+        <td>
+            <button type="button" class="edit" onclick="editRow(this)">Edit</button>
+            <button type="button" class="delete" onclick="deleteRow(this)">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Rusan Ahsan</td>
+        <td>21/07/1996</td>
+        <td>Baruipur</td>
+        <td>18:00:03</td>
+        <td>
+            <button type="button" class="edit" onclick="editRow(this)">Edit</button>
+            <button type="button" class="delete" onclick="deleteRow(this)">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Rusan Ahsan</td>
+        <td>21/07/1996</td>
+        <td>Baruipur</td>
+        <td>18:00:03</td>
+        <td>
+            <button type="button" class="edit" onclick="editRow(this)">Edit</button>
+            <button type="button" class="delete" onclick="deleteRow(this)">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Rusan Ahsan</td>
+        <td>21/07/1996</td>
+        <td>Baruipur</td>
+        <td>18:00:03</td>
+        <td>
+            <button type="button" class="edit" onclick="editRow(this)">Edit</button>
+            <button type="button" class="delete" onclick="deleteRow(this)">Delete</button>
+        </td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td>
+        <td>
+            <button type="button" class="add" onclick="addRow()">Add a Row</button>
+            <button type="button" class="deleterows" onclick="deleteallRow()">Delete all</button>
+        </td>
+    </tr>
+</tfoot>
+</table>
+</body>
+<script src="./script.js"></script>
+</html>
