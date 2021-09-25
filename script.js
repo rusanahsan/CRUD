@@ -62,10 +62,13 @@ function saveRow(obj){
         let val=arr[2].firstChild.value.split('-');
         arr[2].innerHTML=val[2]+"/"+val[1]+"/"+val[0];
         arr[3].innerHTML=arr[3].firstChild.value;
-        var dd=String(d.getDate()).padStart(2,'0');
-        var mm=String(d.getMonth()+1).padStart(2,'0');
-        var yyyy=d.getFullYear();
-        arr[4].textContent=dd+"/"+mm+"/"+yyyy+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+        let dd=String(d.getDate()).padStart(2,'0');
+        let mm=String(d.getMonth()+1).padStart(2,'0');
+        let yyyy=d.getFullYear();
+        let hr=String(d.getHours()).padStart(2,'0');
+        let min=String(d.getMinutes()).padStart(2,'0');
+        let sec=String(d.getSeconds()).padStart(2,'0');
+        arr[4].textContent=dd+"/"+mm+"/"+yyyy+" "+hr+":"+min+":"+sec;
         arr[5].innerHTML=`<button type="button" class="edit" onclick="editRow(this)">Edit</button>
         <button type="button" class="delete" onclick="deleteRow(this)">Delete</button>`;
         enable=true;
