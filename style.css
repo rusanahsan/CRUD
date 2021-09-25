@@ -49,6 +49,7 @@ button{
     outline:none;
     color:whitesmoke;
     cursor:pointer;
+    font-size: 0.9rem;
 }
 .edit{
     width:5rem;
