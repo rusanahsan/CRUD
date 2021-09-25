@@ -5,8 +5,8 @@ var currentId="";
 function deleteRow(obj){
     if(enable){
         let ind=obj.parentNode.parentNode.rowIndex;
-        db.deleteRow(ind);
         delete table[db.rows[ind].cells[0].textContent];
+        db.deleteRow(ind);
     }
 }
 function deleteRows(obj){
@@ -71,6 +71,9 @@ function saveRow(obj){
         arr[4].textContent=dd+"/"+mm+"/"+yyyy+" "+hr+":"+min+":"+sec;
         arr[5].innerHTML=`<button type="button" class="edit" onclick="editRow(this)">Edit</button>
         <button type="button" class="delete" onclick="deleteRow(this)">Delete</button>`;
+        if(currentId!="")
+            delete table[currentId];
+        table[arr[0].textContent]=db.rows[rownum].innerHTML;
         enable=true;
     }
 }
